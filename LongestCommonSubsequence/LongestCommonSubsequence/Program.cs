@@ -26,19 +26,5 @@ namespace LongestCommonSubsequence
             else
                 return Math.Max(LongestCommonSequence(seq1, seq2, seq1Index + 1, seq2Index), LongestCommonSequence(seq1, seq2, seq1Index, seq2Index + 1));
         }
-
-        public static int LongestCommonSequenceMemoizated(string seq1, string seq2, int seq1Index, int seq2Index)
-        {
-            if (String.IsNullOrWhiteSpace(seq1) || String.IsNullOrWhiteSpace(seq1))
-                return 0;
-
-            if (seq1.Length <= seq1Index || seq2.Length <= seq2Index)
-                return 0;
-
-            if (seq1[seq1Index] == seq2[seq2Index])
-                return 1 + LongestCommonSequence(seq1, seq2, seq1Index + 1, seq2Index + 1);
-            else
-                return Math.Max(LongestCommonSequence(seq1, seq2, seq1Index + 1, seq2Index), LongestCommonSequence(seq1, seq2, seq1Index, seq2Index + 1));
-        }
     }
 }
