@@ -18,7 +18,7 @@ namespace LongestCommonSubsequence.Tests
             var result = LongestCommonSebsequence.LongestCommonSequence(seq1, seq2);
 
             // Assert.
-            Xunit.Assert.Equal(resultExpected, result);
+            Assert.Equal(resultExpected, result);
         }
     }
 }
