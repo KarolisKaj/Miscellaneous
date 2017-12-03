@@ -6,7 +6,7 @@ namespace KandaneAlgo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Kandane.KandaneSum(new[] { -1, 3, -4, 4 }));
+            Console.WriteLine(Kandane.KandaneSum(new[] { -5, -5, -1, -5, }));
             Console.Read();
         }
     }
