@@ -1,4 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Xunit;
 
 namespace LongestCommonSubsequence.Tests
@@ -16,7 +15,7 @@ namespace LongestCommonSubsequence.Tests
         {
             // Arrange.
             // Act.
-            var result = LongestCommonSebsequence.LongestCommonSequence(seq1, seq2, 0, 0);
+            var result = LongestCommonSebsequence.LongestCommonSequence(seq1, seq2);
 
             // Assert.
             Xunit.Assert.Equal(resultExpected, result);

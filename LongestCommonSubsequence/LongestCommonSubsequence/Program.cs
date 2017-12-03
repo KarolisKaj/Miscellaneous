@@ -6,14 +6,14 @@ namespace LongestCommonSubsequence
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(LongestCommonSebsequence.LongestCommonSequence("AHGC", "ABC", 0, 0));
+            Console.WriteLine(LongestCommonSebsequence.LongestCommonSequence("AHGC", "ABC"));
             Console.Read();
         }
     }
 
     public static class LongestCommonSebsequence
     {
-        public static int LongestCommonSequence(string seq1, string seq2, int seq1Index, int seq2Index)
+        public static int LongestCommonSequence(string seq1, string seq2, int seq1Index = 0, int seq2Index = 0)
         {
             if (String.IsNullOrWhiteSpace(seq1) || String.IsNullOrWhiteSpace(seq1))
                 return 0;
